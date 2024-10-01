@@ -16,7 +16,7 @@ curl localhost:15001
 ```
 will return a list of found Bluetooth devices as e.g.:
 ```
-(base) adev@mac ~ % curl localhost:15001
+(base) adev@ubuntu ~ % curl localhost:15001
 addr=70:BF:92:D0:DC:63, connected=False, Jabra Elite Active 75t
 addr=70:F2:7A:EE:E6:63, connected=False, 
 addr=48:E1:5C:64:BC:8F, connected=False, 
