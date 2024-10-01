@@ -2,6 +2,14 @@
 
 The service listens to port 15001 by default and handles GET and POST requests as follows:
 
+## Installing and running
+```
+git clone git@github.com:bliep/gn_test.git
+cd gn_test
+dotnet build
+./bin/Debug/net8.0/service 
+```
+
 ## GET
 ```
 curl localhost:15001
@@ -24,7 +32,7 @@ addr=6C:70:CB:8F:2D:89, connected=False, 65" QLED
 addr=E2:BB:9E:8E:55:4D, connected=False, ET-2820 Series
 
 ```
-Note that not every device has a name embedded in their advertisement packet, so the name not always there.
+Note that not every device has a name embedded in their advertisement packet, so the name's not always present.
 
 ## POST
 ```
@@ -40,5 +48,7 @@ The HTTP response gives the result of the connection or disconnection operation 
  - `HttpStatusCode.OK` if the operation succeeded.
  - `HttpStatusCode.ServiceUnavailable` if the server failed bad.
 
-
-Enjoy ;)
+## Notes
+ - be gentle, the code is fresh,
+ - add unit tests if there is more code,
+ - enjoy :)
